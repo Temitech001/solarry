@@ -76,7 +76,7 @@ const Login = () => {
       className=" flex items-center justify-center"
     >
       <div className=" max-w-[370px] w-[100%] mx-auto items-center justify-center flex flex-col ">
-        <div className="p-5 bg-white pt-[60px] pb-[100px]">
+        <div className="p-5 bg-white pt-[58px] pb-[100px]">
           <h1 className="text-center text-[30px] font-semibold mb-6">LOGIN</h1>
 
           <form onSubmit={handleSubmit}>
