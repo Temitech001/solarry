@@ -3,8 +3,9 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { data } from '../data/data';
 import { cards } from '../data/data';
+import { Link } from 'react-scroll';
 
-const Home = () => {
+const Header = () => {
   const img1 =
     'https://res.cloudinary.com/dutvrzezk/image/upload/v1696377012/pexels-ki-media-9799757_tgiwyc.jpg';
 
@@ -25,12 +26,18 @@ const Home = () => {
           <h1 className="mt-[80px] text-white shadow-md z-index lg:text-5xl font-extrabold">
             Energy Generated from Natural Resource
           </h1>
-          <p className="text-white shadow-md font-semibold mt-5">
+          <p className="text-white shadow-md font-semibold mt-5 ">
             Solar Power because the best things in life end up being free
           </p>
-          <button className="bg-orange-500 font-semibold text-sm text-white mt-[50px] py-1 px-3  rounded">
-            CONTACT US
-          </button>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
+            <button className="bg-orange-500 font-semibold text-sm text-white mt-[50px] py-3 px-6 rounded">
+              CONTACT US
+            </button>
+          </Link>
         </div>
         <div className="text-white mt-[70px] flex flex-col  px-8   items-center justify-center lg:flex-row lg:px-40 lg:gap-5 lg:justify-evenly gap-8">
           <h1 className=" mt-8 flex-1 font-semibold text-3xl text-start text-black">
@@ -73,4 +80,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Header;
